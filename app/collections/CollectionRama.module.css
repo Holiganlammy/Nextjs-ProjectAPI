@@ -1,0 +1,97 @@
+.frame {
+    z-index: 1;
+}
+.perspective{
+  perspective: 1000px;
+
+}
+/* .headrotate{
+  transform: rotateY(-15deg);
+  transform-style: preserve-3d ;
+  scale: 0.95;
+  animation-name: leftright;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+} */
+/* .basepicture{
+  width: calc(100dvh - 650px);
+  height: calc(100dvh - 500px);
+} */
+
+.horizontal-image {
+  min-width: min(100%, 870px);
+  max-width: calc(-262.5px + 150vh);
+  width: 100%;
+  height: auto;
+}
+
+
+.vertical-image {
+  min-width: min(100%, 387px);
+  max-width: calc(-116.667px + 66.6667vh);
+  width: 100%;
+  height: auto;
+}
+
+.shadow{
+    top: 0;
+    left: 100%;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: gainsboro;
+    transform: rotateY(85deg);
+    transform-origin: left;
+}
+.shadowleft{
+  top: 0;
+  right: 100%;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-color: gainsboro;
+  transform: rotateY(-85deg);
+  transform-origin: right;
+}
+/* .headrotate:hover{
+  transform: rotateY(15deg);
+  transition: transform 0.5s ease-in-out;
+} */
+/* .Arrow{
+  animation: simple 1s linear infinite;
+}
+.Arrow1{
+  animation: simple1 1s linear infinite;
+} */
+/* @keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+} */
+/* @keyframes leftright {
+  0% {
+   transform: rotateY(-25deg);
+  }
+  50% {
+    transform: rotateY(25deg);
+  }
+  100% {
+    transform: rotateY(-25deg);
+  }
+} */

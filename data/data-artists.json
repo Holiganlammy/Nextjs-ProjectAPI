@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/Adulphan_Is-Sarangwl-na-ayutdhaya.jpg",
+    "name_th": "อดุลย์พันธ์ อิศรางกูร ณ อยุธยา",
+    "name_en": "Adulphan Is-Sarangwl-na-ayutdhaya",
+    "major": "National Artist: ศิลปินแห่งชาติ",
+    "major_type": "National Artist Painting: ศิลปินแห่งชาติสาขาจิตรกรรม (2019)",
+    "slug": "Adulphan-Is-Sarangwl-na-ayutdhaya"
+  },
+  {
+    "id": 2,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/Akkara_Naktamna.jpg",
+    "name_th": "อัครา นักทำนา",
+    "name_en": "Akkara Naktamna",
+    "major": "Professional: ศิลปินชั้นครู",
+    "slug": "Akkara-Naktamna"
+  },
+  {
+    "id": 3,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/%E0%B8%AD%E0%B8%A5%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%93_%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%A7%E0%B8%92%E0%B8%99%E0%B8%B2.jpeg",
+    "name_th": "อลงกรณ์ หล่อวัฒนา",
+    "name_en": "Alongkorn Lauwatthana",
+    "born_day": "14",
+    "born_month": "กรกฎาคม | July",
+    "born_year": "2507 (พ.ศ.1964)",
+    "birth_place": "น่าน | Nan",
+    "education": [
+      {
+        "year": "2533 (พ.ศ.1990)",
+        "education_en": "B.F.A. Thai Art The Faculty of Painting Sculpture and Graphic Arts, Silpakorn University, Bangkok"
+      },
+      {
+        "year": "2541 (พ.ศ.1998)",
+        "education_en": "Post-Diploma in Fine Art (Painting) Kala-Bhavana. Visva-Barati, Santiniketan, W.B. India"
+      }
+    ],
+    "exhibtions": [
+      {
+        "year": "2527 (พ.ศ.1984)",
+        "exhibtions_en": [
+          {
+            "exhibtions_en": "Collaborative Work. Wat Phasingha, Chiangma, Thailand"
+          },
+          {
+            "exhibtions_en": "8th  Bualuang Art Exhibition, Bangkok Thailand"
+          }
+        ]
+      },
+      {
+        "year": "2528 (พ.ศ.1986)",
+        "exhibtions_en": "2nd National Youth Contemporary Art Competition, Silpakorn Gallery, Bangkok, Thailand"
+      },
+      {
+        "year": "2529 (พ.ศ.1985)",
+        "year_end": "2532 (พ.ศ.1989)",
+        "exhibtions_en": "32nd, 35th  National Art Competition, Bangkok. Thailand."
+      },
+      {
+        "year": "2529 (พ.ศ.1986)",
+        "year_end": "2533 (พ.ศ.1990)",
+        "exhibtions_en": "4th , 5th “Thai Art 23” Art Exhibition, Bangkok, Thailand"
+      }
+    ],
+    "solo_exhibtions": [
+      {
+        "year": "2541 (พ.ศ.1998)",
+        "exhibtions_en": [
+          {
+            "exhibtions_en": "'Ganesha' Nandan Gallery, Santiniketan,W.B, India"
+          },
+          {
+            "exhibtions_en": "'Ganesha' National Gallery, Bangkok, Thailand"
+          }
+        ]
+      },
+      {
+        "year": "2544 (พ.ศ.2001)",
+        "exhibtions_en": "'Kurubalee to Santiniketan Painting' Viengtavern Gallery. Bangkok, Thailand."
+      }
+    ],
+    "awards": [
+      {
+        "year": "2526 (พ.ศ.1983)",
+        "awards_en": "Special Prize, 'Reeve' Art Competition, Bangkok, Thailand."
+      },
+      {
+        "year": "2527 (พ.ศ.1984)",
+        "awards_en": "Award Winner 'The National Young' Artist Art Competition, Bangkok. Thailand."
+      }
+    ],
+    "collections": [
+      {
+        "year": "2528 (พ.ศ.1985)",
+        "collections_en": "Jointed Mural Painting on the Doors. Wat Prasing, with SURASIT SOUWAKONG, Chaingmai, Thailand."
+      },
+      {
+        "year": "2531 (พ.ศ.1988)",
+        "collections_en": [
+          {
+            "collections_en": "Jointed Mural Painting 'World Expo'88', Brisbane. Australia"
+          },
+          {
+            "collections_en": "Collaborative Work, Mural Panting. Bhudapradipa Temple, London, England"
+          }
+        ]
+      }
+    ],
+    "major": "Commercial: ศิลปินเชิงพาณิชย์",
+    "slug": "Alongkorn-Lauwatthana"
+  },
+  {
+    "id": 4,
+    "image_url": "https://www.eng.chula.ac.th/wp-content/uploads/2016/11/profile-pic.jpeg",
+    "name_th": "อัมรินทร์ บุพศิริ",
+    "name_en": "Amarin Buppasiri",
+    "born_day": "16",
+    "born_month": "กรกฎาคม | July",
+    "born_year": "2528 (พ.ศ.1985)",
+    "major": "Amateur: ศิลปินสมัครเล่น",
+    "slug": "Amarin-Buppasiri"
+  },
+  {
+    "id": 5,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/Amnad_Vashirasurt.jpg",
+    "name_th": "อำนาจ วชิระสูตร",
+    "name_en": "Amnad Vashirasurt",
+    "born_day": "6",
+    "born_month": "ตุลาคม | October",
+    "born_year": "2513 (พ.ศ.1970)",
+    "major": "National Artist: ศิลปินแห่งชาติ",
+    "major_type": "National Artist Mixed Media: ศิลปินแห่งชาติสาขาสื่อผสม (2020)",
+    "slug": "Amnad-Vashirasurt"
+  },
+  {
+    "id": 6,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B9%84%E0%B8%8A%E0%B8%A2_%E0%B8%9A%E0%B8%A7%E0%B8%8A%E0%B8%A1_KnN49yT.jpg",
+    "name_th": "อำนาจ กลั่นประชา",
+    "name_en": "Amnart Klanprachar",
+    "born_day": "13",
+    "born_month": "สิงหาคม | August",
+    "born_year": "2497 (พ.ศ.1954)",
+    "birth_place": "กรุงเทพมหานคร | Bangkok",
+    "major": "Professional: ศิลปินชั้นครู",
+    "slug": "Amnart-Klanprachar"
+  },
+  {
+    "id": 7,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/%E0%B8%AD%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%88_%E0%B8%84%E0%B8%87%E0%B8%A7%E0%B8%B2%E0%B8%A3.jpeg",
+    "name_th": "อำนาจ คงวารี",
+    "name_en": "Amnat Kongwaree",
+    "born_day": "19",
+    "born_month": "พฤศจิกายน | November",
+    "born_year": "2520 (พ.ศ.1977)",
+    "birth_place": "สุพรรณบุรี | Suphan Buri",
+    "major": "Commercial: ศิลปินเชิงพาณิชย์",
+    "slug": "Amnat-Kongwaree"
+  },
+  {
+    "id": 8,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/%E0%B8%AD%E0%B8%A1%E0%B8%A3_%E0%B8%9E%E0%B8%93%E0%B8%9E%E0%B8%A1%E0%B8%B2%E0%B8%A2.jpeg",
+    "name_th": "อมร พิณพิมาย",
+    "name_en": "Amorn Pinpimai",
+    "born_year": "2511 (พ.ศ.1968)",
+    "birth_place": "นครราชสีมา | Nakhon Ratchasima",
+    "dead_year": "2555 (พ.ศ.2012)",
+    "major": "Amateur: ศิลปินสมัครเล่น",
+    "slug": "Amorn-Pinpimai"
+  },
+  {
+    "id": 9,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/Amorn_Settitorn.jpg",
+    "name_th": "อมร เศรษฐีธร",
+    "name_en": "Amorn Settitorn",
+    "born_day": "18",
+    "born_month": "เมษายน | April",
+    "born_year": "2491 (พ.ศ.1948)",
+    "major": "National Artist: ศิลปินแห่งชาติ",
+    "major_type": "National Artist Applied Art: ศิลปินแห่งชาติสาขาศิลปะประยุกต์ (2021)",
+    "slug": "Amorn-Settitorn"
+  },
+  {
+    "id": 10,
+    "image_url": "http://collection.rama9artdemo.com/media/profile_images/Amrit_Chusuwan.jpg",
+    "name_th": "อำมฤทธิ์ ชูสุวรรณ",
+    "name_en": "Amrit Chusuwan",
+    "born_day": "22",
+    "born_month": "เมษายน | April",
+    "born_year": "2538 (พ.ศ.1995)",
+    "major": "Professional: ศิลปินชั้นครู",
+    "slug": "Amrit-Chusuwan"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "title":"Art database",
+    "links": [
+      {
+        "title": "Exhibitions",
+        "href": "/exhibitions"
+      },
+      {
+        "title": "Artist",
+        "href": "/artists"
+      },
+      {
+        "title": "Collection",
+        "href": "/collections"
+      },
+      {
+        "title": "Library",
+        "href": "/library"
+      },
+      {
+        "title": "ArtBase",
+        "href": "/artbase"
+      },
+      {
+        "title": "Gallery",
+        "href": "/galleries"
+      },
+      {
+        "title": "Curator",
+        "href": "/curator"
+      }
+    ]
+  },
+  {
+    "title":"Art Activities",
+    "links":[
+      {
+        "title": "Art News & Art Event",
+        "href": "-"
+      },
+      {
+        "title": "Art Competition",
+        "href": "-"
+      }
+    ]
+  },
+  {
+    "title":"Rama IX Art Museum",
+    "links":[
+      {
+        "title": "About Rama IX Art",
+        "href": "/about"
+      },
+      {
+        "title": "Board of Director",
+        "href": "/board-of-director"
+      },
+      {
+        "title": "Foundation Officer",
+        "href": "/foundation-office"
+      },
+      {
+        "title": "Audited Financial Statements",
+        "href": "-"
+      }
+    ]
+  },
+  {
+    "title":"Related Website",
+    "links":[
+      {
+        "title":"Supreme Artist",
+        "href":""
+      },
+      {
+        "title":"Wisithsilapin",
+        "href":""
+      }
+    ]
+  }
+]

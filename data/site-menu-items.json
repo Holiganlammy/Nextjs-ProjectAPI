@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Exhibition",
+    "href": "/exhibition",
+    "activecolor": "#8047B3"
+  },
+  {
+    "title": "Artists",
+    "href": "/artists",
+    "activecolor": "#5481D1"
+  },
+  {
+    "title": "Collection",
+    "href": "/collections",
+    "activecolor": "#2BAC7E"
+  },
+  {
+    "title": "Library",
+    "href": "/library",
+    "activecolor": "#AAD363"
+  },
+  {
+    "title": "Art Base",
+    "href": "/artbase",
+    "activecolor": "#EAB444"
+  },
+  {
+    "title": "Gallerry",
+    "href": "/gallerry",
+    "activecolor": "#EB7B68"
+  },
+  {
+    "title": "Curator",
+    "href": "/curator",
+    "activecolor": "#DD2681"
+  }
+]
