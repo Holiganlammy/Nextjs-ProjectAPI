@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import { MouseEvent } from "react";
 import { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-RadioGroup
 const AZAsciis = Array.from({ length: 26 }, (_, index) => index + 65);
 
 type AlphabetField = ControllerRenderProps<CollectionSearch, "artist_first_Alphabet">

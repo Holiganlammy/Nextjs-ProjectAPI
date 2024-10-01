@@ -80,7 +80,7 @@ export function Related_Carousel_ItemsSections({ CollectionOther }: CollectionOt
               {CollectionOther.map((Artist) => {
                 const slug = !Artist.slug ? Artist.id : Artist.slug
                 return (
-                  <CarouselItem className="basis-1/2 lg:basis-1/6 xl:basis-[10%] p-5">
+                  <CarouselItem key={Artist.id} className="basis-1/2 lg:basis-1/6 xl:basis-[10%] p-5">
                     <Link className="w-[50%] sm:w-1/4" href={`/collections/${slug}`}>
                       <div className="h-0 pb-[100%] relative shadow-[10px_10px_5px_0px_rgba(210,215,211)] hover:shadow-[10px_10px_10px_1px_rgba(0,0,0,0.3)] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-xl hover:rounded-xl">
                         <Image

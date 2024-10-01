@@ -30,11 +30,11 @@ export default function YearPicker({ field, startYear, endYear } : ComponentProp
   const definedStartYear = startYear ?? defaultStartYear;
   const definedEndYear = endYear ?? defaultEndYear;
   const years = Array.from({ length: definedEndYear - definedStartYear + 1 }, (_, k) => k + definedStartYear);
-  let yearsPages: number[][] = [];
+  const yearsPages: number[][] = [];
   for (let k = years.length; k > 0; k -= yearsPerPage) {
     const yearsPage = years.slice(Math.max(k - yearsPerPage, 0), k);
     if (yearsPage.length < 25) {
-      yearsPage.splice(0, 0, ...Array.from({ length: 25 - yearsPage.length }, (_, __) => 0))
+      yearsPage.splice(0, 0, ...Array.from({ length: 25 - yearsPage.length }, () => 0))
     }
     yearsPages.splice(0, 0, yearsPage);
   }
