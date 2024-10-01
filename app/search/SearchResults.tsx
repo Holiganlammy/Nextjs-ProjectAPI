@@ -1,7 +1,6 @@
 "use client"
-import { ArtCollection } from "@/components/collections/ArtCollectionItem";
-import { BookItem } from "@/components/books";
-import { ArtistItem } from "@/components/artists";
+import { ArtCollectionItem } from "@/components/collections/ArtCollectionItem";
+
 import { Button } from "@/components/ui/button";
 import { useSearchParams } from "next/navigation";
 // import useBookListAPI from "@/fetcher-api/book-list";
@@ -36,22 +35,22 @@ export default function UniversalSearch() {
           setCountCollection(responseJson.count)
           // console.log(apiCollection)
         });
-      const apiArtists = `${apiEndpoint}/api/artists/?${urlSearchParams.toString()}`;
-      fetch(apiArtists).then(response => (
-        response.json()
-      )).then((responseJson: { items: Artist[], count: number }) => {
-        setArtist(responseJson.items);
-        setCountArtist(responseJson.count)
-        // console.log(apiArtists)
-      });
-      const apiBooks = `${apiEndpoint}/api/books/?${urlSearchParams.toString()}`;
-      fetch(apiBooks).then(response => (
-        response.json()
-      )).then((responseJson: { items: Book[], count: number }) => {
-        setBooks(responseJson.items);
-        setCountBooks(responseJson.count)
-        // console.log(apiBooks)
-      });
+      // const apiArtists = `${apiEndpoint}/api/artists/?${urlSearchParams.toString()}`;
+      // fetch(apiArtists).then(response => (
+      //   response.json()
+      // )).then((responseJson: { items: Artist[], count: number }) => {
+      //   setArtist(responseJson.items);
+      //   setCountArtist(responseJson.count)
+      //   // console.log(apiArtists)
+      // });
+      // const apiBooks = `${apiEndpoint}/api/books/?${urlSearchParams.toString()}`;
+      // fetch(apiBooks).then(response => (
+      //   response.json()
+      // )).then((responseJson: { items: Book[], count: number }) => {
+      //   setBooks(responseJson.items);
+      //   setCountBooks(responseJson.count)
+      //   // console.log(apiBooks)
+      // });
     }
   }, [q]);
 
@@ -83,7 +82,7 @@ export default function UniversalSearch() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-8 gap-x-2 mx-auto mb-5">
             {collections.map((filter) => (
-              <ArtCollection key={filter.id} Collection={filter} />
+              <ArtCollectionItem key={filter.id} Collection={filter} />
             ))}
           </div>
           {countCollection >= 16 && (
@@ -97,7 +96,7 @@ export default function UniversalSearch() {
           )}
         </div>
         : ""}
-      {artist.length ?
+      {/* {artist.length ?
         <div>
           <div className="flex p-3 space-x-2">
             <p className="font-bold text-[#13336A]">All Artist</p>
@@ -120,8 +119,8 @@ export default function UniversalSearch() {
             </div>
           )}
         </div>
-        : ""}
-      {books.length ?
+        : ""} */}
+      {/* {books.length ?
         <div className="p-2">
           <div className="flex p-1 space-x-2 pb-5">
             <p className="font-bold text-purple-800">All Books</p>
@@ -140,7 +139,7 @@ export default function UniversalSearch() {
             </Link>
           )}
         </div>
-        : ""}
+        : ""} */}
     </div>
   )
 }
