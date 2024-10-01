@@ -7,7 +7,7 @@ export default function HomePage() {
       <div className="mt-32">
         <div className="pb-20">
           <p className="text-3xl md:text-6xl font-bold text-center text-[#1C3366]">RAMA IX ART MUSEUM</p>
-          <p className="text-base md:text-xl text-center mt-5 md:mt-10 text-[#284986]">Thailand's Contemporary Art On Web</p>
+          <p className="text-base md:text-xl text-center mt-5 md:mt-10 text-[#284986]">Thailand{`'`}s Contemporary Art On Web</p>
         </div>
         <Suspense>
           <HomeSearchForm />

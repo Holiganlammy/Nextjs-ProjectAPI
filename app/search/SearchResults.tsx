@@ -65,7 +65,7 @@ export default function UniversalSearch() {
     <div>
       <div className="space-x-3 text-center">
         <span className="text-2xl md:text-[40px]">Search Results of</span>
-        <span className="text-2xl md:text-[40px] font-bold">"{q}"</span>
+        <span className="text-2xl md:text-[40px] font-bold">{`"`}{q}{`"`}</span>
       </div>
       {collections.length ?
         <div>
