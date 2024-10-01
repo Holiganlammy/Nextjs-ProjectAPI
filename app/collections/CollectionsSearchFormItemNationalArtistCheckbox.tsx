@@ -12,7 +12,7 @@ export function CollectionsSearchFormItemNationalArtistCheckbox({ field }: Compo
   return (
     <FormItem>
       <FormControl>
-        <button className={`flex p-2 lg:p-1.5 items-center justify-center shadow-sm border rounded-full w-full mx-auto ${field.value ? "border-[#2BAC7E]" : ""}`} onClick={field.onChange}>
+        <div className={`flex p-2 lg:p-1.5 items-center justify-center shadow-sm border rounded-full w-full mx-auto ${field.value ? "border-[#2BAC7E]" : ""}`} onClick={field.onChange}>
           <Checkbox checked={field.value}
             onCheckedChange={field.onChange}
             className={`w-4 h-4 lg:w-[10%] lg:h-5 items-center data-[state=checked]:bg-white data-[state=checked]:text-primary"
@@ -26,7 +26,7 @@ export function CollectionsSearchFormItemNationalArtistCheckbox({ field }: Compo
             </label>
           </div>
           <ListCheck />
-        </button>
+        </div>
       </FormControl>
     </FormItem>
   )

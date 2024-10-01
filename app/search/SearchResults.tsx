@@ -12,11 +12,11 @@ import Link from "next/link";
 
 export default function UniversalSearch() {
   const [countCollection, setCountCollection] = useState<number>(0)
-  const [countArtist, setCountArtist] = useState<number>(0)
-  const [countBooks, setCountBooks] = useState<number>(0)
+  // const [countArtist, setCountArtist] = useState<number>(0)
+  // const [countBooks, setCountBooks] = useState<number>(0)
   const [collections, setCollections] = useState<Collection[]>([]);
-  const [artist, setArtist] = useState<Artist[]>([]);
-  const [books, setBooks] = useState<Book[]>([])
+  // const [artist, setArtist] = useState<Artist[]>([]);
+  // const [books, setBooks] = useState<Book[]>([])
   const searchParams = useSearchParams();
   const q = searchParams.get("q") ?? ""
   const limit = searchParams.get("limit") ?? ""
@@ -58,7 +58,7 @@ export default function UniversalSearch() {
   //   return <LibraryResultsFallback />;
   // }
   // console.log(count)
-  if (!artist.length && !books.length && !collections.length) {
+  if (!collections.length) {
     return <p className="">Not Found</p>
   }
   return (

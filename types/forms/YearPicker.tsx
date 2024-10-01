@@ -1,12 +1,12 @@
 "use client";
 
 import { ControllerRenderProps } from "react-hook-form";
-import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "../ui/carousel";
-import { FormItem, FormControl, FormLabel } from "../ui/form";
-import { Checkbox } from "../ui/checkbox";
+import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { FormItem, FormControl, FormLabel } from "@/components/ui/form";
+import { Checkbox } from "@/components/ui/checkbox";
 import { CheckedState } from "@radix-ui/react-checkbox";
 import { useEffect, useMemo, useState } from "react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ComponentProps {
