@@ -5,14 +5,14 @@ import { CollectionsSearchForm } from './CollectionsSearchForm'
 async function fetchInitialData(searchParams: URLSearchParams) {
   const api = process.env.NEXT_PUBLIC_API_ENDPOINT;
   const urlSearchParams = new URLSearchParams(searchParams);
-  const apiCollection = `${api}/api/games/?${urlSearchParams.toString()}`;
-
-  const response = await fetch(apiCollection);
-  if (!response.ok) {
-    throw new Error("Failed to fetch data");
+  if (api) {
+    const apiCollection = `${api}/api/games/?${urlSearchParams.toString()}`;
+    const response = await fetch(apiCollection);
+    if (!response.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    return response.json();
   }
-
-  return response.json();
 }
 
 export default async function Page() {
@@ -41,7 +41,7 @@ export default async function Page() {
 
       <div className="bg-black py-8 -mx-3 sm:-mx-4 lg:-mx-6 flex justify-center">
         <p className="text-center font-normal text-base sm:text-lg max-w-7xl w-full text-white">
-          <strong>World wire Game Center</strong>  , the best Game center for you to experience every game for free and play 
+          <strong>World wire Game Center</strong>  , the best Game center for you to experience every game for free and play
           <br /> it freely. You can search and play freely along with games that are only special. Only here, World wire Game center
         </p>
       </div>
