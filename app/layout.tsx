@@ -24,8 +24,8 @@ const font = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Movies Blockbuster By Nonnipat",
-  description: "Movies Blockbuster website",
+  title: "World Wire Game Center",
+  description: "World Wire Game Center website",
 };
 
 export default function RootLayout({

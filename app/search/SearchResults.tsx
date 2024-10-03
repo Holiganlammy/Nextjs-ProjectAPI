@@ -1,5 +1,5 @@
 "use client"
-import { ArtCollectionItem } from "@/components/collections/ArtCollectionItem";
+import { GameListItem } from "@/components/games/GameListItem";
 
 import { Button } from "@/components/ui/button";
 import { useSearchParams } from "next/navigation";
@@ -14,7 +14,7 @@ export default function UniversalSearch() {
   const [countCollection, setCountCollection] = useState<number>(0)
   // const [countArtist, setCountArtist] = useState<number>(0)
   // const [countBooks, setCountBooks] = useState<number>(0)
-  const [collections, setCollections] = useState<Collection[]>([]);
+  const [collections, setCollections] = useState<Games[]>([]);
   // const [artist, setArtist] = useState<Artist[]>([]);
   // const [books, setBooks] = useState<Book[]>([])
   const searchParams = useSearchParams();
@@ -30,7 +30,7 @@ export default function UniversalSearch() {
       const apiCollection = `${apiEndpoint}/api/art-collections/?${urlSearchParams.toString()}`;
       fetch(apiCollection)
         .then((response) => response.json())
-        .then((responseJson: { items: Collection[], count: number }) => {
+        .then((responseJson: { items: Games[], count: number }) => {
           setCollections(responseJson.items);
           setCountCollection(responseJson.count)
           // console.log(apiCollection)
@@ -82,7 +82,7 @@ export default function UniversalSearch() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-8 gap-x-2 mx-auto mb-5">
             {collections.map((filter) => (
-              <ArtCollectionItem key={filter.id} Collection={filter} />
+              <GameListItem key={filter.id} Collection={filter} />
             ))}
           </div>
           {countCollection >= 16 && (

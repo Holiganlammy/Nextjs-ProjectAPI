@@ -4,18 +4,18 @@
 //   X,
 // } from "lucide-react";
 import { FilterIcon } from "lucide-react";
-import { CollectionsSearchFormItemYears } from "./CollectionsSearchFormItemYears";
+import { GameListsSearchFormItemYears } from "./GameListsSearchFormItemYears";
 import { useEffect } from "react";
 import { Form, FormField } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { CollectionsSearchFormItemSort } from "./CollectionsSearchFormItemSort"
-import { CollectionsSearchFormItemQ } from "./CollectionsSearchFormItemQ";
-import { CollectionsSearchFormItemCollectionType } from "./CollectionsSearchFormItemCollectionType"
-import { CollectionsSearchFormItemAlphabet } from "./CollectionsSearchFormItemAlphabet"
+import { GameListsSearchFormItemSort } from "./GameListsSearchFormItemSort"
+import { GameListsSearchFormItemQ } from "./GameListsSearchFormItemQ";
+import { GameListsSearchFormItemCollectionType } from "./GameListsSearchFormItemCollectionType"
+import { GameListsSearchFormItemAlphabet } from "./GameListsSearchFormItemAlphabet"
 import { Label } from "@/components/ui/label";
-import { CollectionsSearchFormItemNationalArtistCheckbox } from "./CollectionsSearchFormItemNationalArtistCheckbox"
+import { GameListsSearchFormItemNationalArtistCheckbox } from "./GameListsSearchFormItemNationalArtistCheckbox"
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -75,7 +75,7 @@ export function CollectionsSearchForm() {
     if (_endYear) urlSearchParams.set("end_year", `${_endYear}`);
     // Change URL
     const urlSearchParamsString = urlSearchParams.toString();
-    router.push(`/collections${urlSearchParamsString ? `?${urlSearchParamsString}` : ""}`);
+    router.push(`/games${urlSearchParamsString ? `?${urlSearchParamsString}` : ""}`);
   }
   useEffect(() => {
     onSubmitValid(form.getValues())
@@ -89,14 +89,14 @@ export function CollectionsSearchForm() {
             <FormField
               control={form.control}
               name="artCollectionType"
-              render={({ field }) => <CollectionsSearchFormItemCollectionType field={field} />}
+              render={({ field }) => <GameListsSearchFormItemCollectionType field={field} />}
             />
             <div className="relative max-w-[1000px] mx-auto flex items-center gap-2">
               <div className="flex-grow flex-1">
                 <FormField
                   control={form.control}
                   name="q"
-                  render={({ field }) => <CollectionsSearchFormItemQ field={field} />}
+                  render={({ field }) => <GameListsSearchFormItemQ field={field} />}
                 />
               </div>
               <div className="md:hidden">
@@ -117,7 +117,7 @@ export function CollectionsSearchForm() {
               <FormField
                 control={form.control}
                 name="National"
-                render={({ field }) => <CollectionsSearchFormItemNationalArtistCheckbox field={field} />}
+                render={({ field }) => <GameListsSearchFormItemNationalArtistCheckbox field={field} />}
               />
             </div>
             <div className="md:w-1/4 md:max-w-80">
@@ -125,7 +125,7 @@ export function CollectionsSearchForm() {
               <FormField
                 control={form.control}
                 name="years"
-                render={({ field }) => <CollectionsSearchFormItemYears field={field} year={year} endYear={endYear} />}
+                render={({ field }) => <GameListsSearchFormItemYears field={field} year={year} endYear={endYear} />}
               />
             </div>
             <div className="md:w-1/4 md:max-w-80">
@@ -133,7 +133,7 @@ export function CollectionsSearchForm() {
               <FormField
                 control={form.control}
                 name="artist_first_Alphabet"
-                render={({ field }) => <CollectionsSearchFormItemAlphabet field={field} />}
+                render={({ field }) => <GameListsSearchFormItemAlphabet field={field} />}
               />
             </div>
             <div className="md:w-1/4 md:max-w-80">
@@ -141,7 +141,7 @@ export function CollectionsSearchForm() {
               <FormField
                 control={form.control}
                 name="sort"
-                render={({ field }) => <CollectionsSearchFormItemSort field={field} />}
+                render={({ field }) => <GameListsSearchFormItemSort field={field} />}
               />
             </div>
           </div>

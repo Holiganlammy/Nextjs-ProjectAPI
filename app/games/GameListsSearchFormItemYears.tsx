@@ -14,7 +14,7 @@ interface ComponentProps {
   endYear?: number | string | null;
 }
 
-export function CollectionsSearchFormItemYears({ field, year, endYear }: ComponentProps) {
+export function GameListsSearchFormItemYears({ field, year, endYear }: ComponentProps) {
   const [isOpen , setIsOpen] = useState(false)
   let yearsLabel = "Filter year of work"
   if (!!year && !!endYear && !isNaN(+year) && !isNaN(+endYear)) {

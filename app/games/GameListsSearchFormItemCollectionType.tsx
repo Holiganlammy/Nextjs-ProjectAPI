@@ -5,7 +5,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { ControllerRenderProps } from "react-hook-form";
 const CollectionTypes = [
   {
-    title: "Rama IX Art Collection",
+    title: "GameList",
     value: ""
   },
   // {
@@ -20,7 +20,7 @@ const CollectionTypes = [
 interface ComponentProps {
   field: ControllerRenderProps<CollectionSearch, "artCollectionType">;
 }
-export function CollectionsSearchFormItemCollectionType({ field }: ComponentProps) {
+export function GameListsSearchFormItemCollectionType({ field }: ComponentProps) {
   return (
     <FormItem className="">
       <FormControl>

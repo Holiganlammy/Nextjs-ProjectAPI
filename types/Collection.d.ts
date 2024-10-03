@@ -1,20 +1,30 @@
-interface Collection {
+interface Games {
   id: number | string;
-  image?: string;
-  image_width?: number;
-  image_height?: number;
-  slug:string;
-  title_en?: string;
-  title_th?: string;
-  year?: number;
-  year_2?: number;
-  technique:string;
-  other_technique_th: string;
-  other_technique_en: string;
-  exhibition_type?: string;
-  artist?:CollectionArtist;
+  title?: string;
+  thumbnail?: string;
+  thumbnail_width?: number;
+  thumbnail_height?: number;
+  short_description?:string;
+  game_url?: string;
+  genre?: string;
+  platform:string;
+  publisher: string;
+  developer: string;
+  release_date?: string;
+  freetogame_profile_url?:string
+  // artist?:CollectionArtist;
 }
-
+// "id": 582,
+// "title": "Tarisland",
+// "thumbnail": "https://www.freetogame.com/g/582/thumbnail.jpg",
+// "short_description": "A cross-platform MMORPG developed by Level Infinite and Published by Tencent.",
+// "game_url": "https://www.freetogame.com/open/tarisland",
+// "genre": "MMORPG",
+// "platform": "PC (Windows)",
+// "publisher": "Tencent",
+// "developer": "Level Infinite",
+// "release_date": "2024-06-22",
+// "freetogame_profile_url": "https://www.freetogame.com/tarisland"
 interface CollectionArtist{
   id: number;
   image:string;

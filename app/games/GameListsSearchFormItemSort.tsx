@@ -20,7 +20,7 @@ function onSortClearClick(event: MouseEvent<SVGSVGElement | globalThis.MouseEven
   event.stopPropagation();
   field.onChange(null);
 }
-export function CollectionsSearchFormItemSort({ field }: ComponentProps) {
+export function GameListsSearchFormItemSort({ field }: ComponentProps) {
   const [open, setOpen] = useState(false);
   const [isSelected, setIsSelected] = useState<boolean>(field.value !== 'default' && !!field.value);
 

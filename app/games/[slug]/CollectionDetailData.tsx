@@ -1,7 +1,7 @@
 "use client";
-import { ExhibitionsItemCarousel } from "@/app/collections/[slug]/ExhibitionsCarousel";
-import { Related_Carousel_ItemsSections } from "@/app/collections/[slug]/RelatedLinksCarousel";
-import { CollectionDetail } from "@/app/collections/[slug]/CollectionDetailZoom"
+import { ExhibitionsItemCarousel } from "@/app/games/[slug]/ExhibitionsCarousel";
+import { Related_Carousel_ItemsSections } from "@/app/games/[slug]/RelatedLinksCarousel";
+import { CollectionDetail } from "@/app/games/[slug]/CollectionDetailZoom"
 import { useState, useEffect } from "react";
 import { ChevronLeft } from 'lucide-react';
 import Link from "next/link";

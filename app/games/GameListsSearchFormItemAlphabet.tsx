@@ -19,7 +19,7 @@ interface ComponentProps {
   field: AlphabetField;
 }
 
-export function CollectionsSearchFormItemAlphabet({ field }: ComponentProps) {
+export function GameListsSearchFormItemAlphabet({ field }: ComponentProps) {
   const [open, setOpen] = useState(false);
   const Select = (letter: string) => {
     field.onChange(letter);

@@ -8,7 +8,7 @@ interface ComponentProps {
   field: ControllerRenderProps<CollectionSearch, "National">;
 }
 
-export function CollectionsSearchFormItemNationalArtistCheckbox({ field }: ComponentProps) {
+export function GameListsSearchFormItemNationalArtistCheckbox({ field }: ComponentProps) {
   return (
     <FormItem>
       <FormControl>

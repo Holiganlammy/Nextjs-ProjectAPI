@@ -8,7 +8,7 @@ interface ComponentProps {
   field: ControllerRenderProps<CollectionSearch, "q">;
 }
 
-export function CollectionsSearchFormItemQ({ field }: ComponentProps) {
+export function GameListsSearchFormItemQ({ field }: ComponentProps) {
   return (
     <FormItem>
       <FormControl>

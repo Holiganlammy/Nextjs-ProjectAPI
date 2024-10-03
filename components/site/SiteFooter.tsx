@@ -3,8 +3,9 @@ import Link from "next/link"
 import { ExternalLink } from 'lucide-react';
 export default function SiteFooter() {
   return (
-    <div className="bg-[#051525] text-[#FFFFFF] w-full h-full p-5 2xl:p-5">
-      <div className="max-w-[1550px] mx-auto pt-10">
+    <div className="bg-[#ffce2f] text-[#FFFFFF] w-full h-full p-5 2xl:p-5">
+      <p className="flex justify-center">Copy right 2024</p>
+      {/* <div className="max-w-[1550px] mx-auto pt-10">
         <div className="xl:flex flex-wrap justify-between">
           <div className="w-full xl:w-[40%] text-center pt-[50px]">
             <h1 className="text-4xl font-bold mb-4">Rama IX Art Museum</h1>
@@ -57,7 +58,7 @@ export default function SiteFooter() {
           <footer className="text-base hidden xl:flex xl:items-center w-full text-left xl:w-[75%]">
             Copyright &copy; 2024 Rama IX Art Museum Foundation. All rights reserved. Powered by IX Artbase
           </footer>
-        </div>
+        </div> */}
     </div>
   )
 }

@@ -106,20 +106,19 @@ export default function SiteHeader() {
             <div className="flex h-full pr-3">
               <h1 className="font-semibold self-center">
                 <Link href="/">
-                  <Image src="/images/Site/Group609.png" alt="LogoRAMAIX" width="130" height="75" className="" />
+                  <Image src="/images/Games/world_wire_Game_Center.png" alt="LogoRAMAIX" width="130" height="75" className="" />
                 </Link>
               </h1>
             </div>
             <div className="hidden xl:flex">
               {siteMenuItems.map((menuItem) => {
-                // Check if the current pathname matches the menu item's href
                 const isActive = pathname === menuItem.href;
                 return (
                   <div key={menuItem.title} className="flex h-full mx-5">
                     <Link
                       href={menuItem.href}
                       className={`relative self-center text-lg`}
-                      style={{ color: isActive ? menuItem.activecolor : '#051525' }} // ใช้ style แทน
+                      style={{ color: isActive ? menuItem.activecolor : '#051525' }} 
                     >
                       {menuItem.title}
                       <span
@@ -133,7 +132,7 @@ export default function SiteHeader() {
             </div>
           </div>
           <div className="w-full md:max-w-32 flex space-x-7 items-center">
-            <div ref={searchRef} className="w-full md:w-[40%]">
+            <div ref={searchRef} className="w-full">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmitValid, console.error)}>
                   <FormField
@@ -175,11 +174,7 @@ export default function SiteHeader() {
                 </form>
               </Form>
             </div>
-            <div className="w-[20%] md:w-[60%] space-x-2 flex justify-center text-sm md:text-lg items-center">
-              <button className="text-blue-950 font-bold">EN</button>
-              <span >|</span>
-              <button>TH</button>
-            </div>
+
           </div>
         </div>
       </div>
