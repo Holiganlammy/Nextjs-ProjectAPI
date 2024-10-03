@@ -1,6 +1,6 @@
-import Sitefooter from "@/data/site-footer-menu.json"
-import Link from "next/link"
-import { ExternalLink } from 'lucide-react';
+// import Sitefooter from "@/data/site-footer-menu.json"
+// import Link from "next/link"
+// import { ExternalLink } from 'lucide-react';
 export default function SiteFooter() {
   return (
     <div className="bg-[#ffce2f] text-[#FFFFFF] w-full h-full p-5 2xl:p-5">
