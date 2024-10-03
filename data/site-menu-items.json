@@ -1,33 +1,18 @@
 [
   {
-    "title": "Exhibition",
-    "href": "/exhibition",
+    "title": "Home",
+    "href": "/",
     "activecolor": "#8047B3"
   },
   {
-    "title": "Artists",
-    "href": "/artists",
-    "activecolor": "#5481D1"
+    "title": "About",
+    "href": "/About",
+    "activecolor": "#EB7B68"
   },
   {
-    "title": "Collection",
+    "title": "All Movies",
     "href": "/collections",
     "activecolor": "#2BAC7E"
-  },
-  {
-    "title": "Library",
-    "href": "/library",
-    "activecolor": "#AAD363"
-  },
-  {
-    "title": "Art Base",
-    "href": "/artbase",
-    "activecolor": "#EAB444"
-  },
-  {
-    "title": "Gallerry",
-    "href": "/gallerry",
-    "activecolor": "#EB7B68"
   },
   {
     "title": "Curator",

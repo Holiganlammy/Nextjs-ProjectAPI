@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Suspense } from "react";
 
 import "./globals.css";
-import  SiteHeader  from "@/components/site/SiteHeader";
-import  SiteFooter  from "@/components/site/SiteFooter"
+import SiteHeader from "@/components/site/SiteHeader";
+import SiteFooter from "@/components/site/SiteFooter"
 
 const font = localFont({
   src: [
@@ -23,8 +24,8 @@ const font = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Rama IX Art Foundation",
-  description: "Rama IX Art Foundation website",
+  title: "Movies Blockbuster By Nonnipat",
+  description: "Movies Blockbuster website",
 };
 
 export default function RootLayout({
@@ -35,7 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-        <SiteHeader />
+        <Suspense>
+          <SiteHeader />
+        </Suspense>
         {children}
         <SiteFooter />
       </body>

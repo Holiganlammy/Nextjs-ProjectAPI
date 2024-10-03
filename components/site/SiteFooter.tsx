@@ -9,12 +9,6 @@ export default function SiteFooter() {
           <div className="w-full xl:w-[40%] text-center pt-[50px]">
             <h1 className="text-4xl font-bold mb-4">Rama IX Art Museum</h1>
             <p className="text-lg mb-8">Thailand&apos;s Contemporary Art on the Web</p>
-            <p className="text-base leading-relaxed w-full pb-5 xl:pb-0 xl:pt-[50px]">
-              18th Fl.,I Tower Building, 888 Vibhavadi Rangsit Rd,<br />
-              Chatuchak, Bangkok 10900 Thailand.<br />
-              Tel. (+66) 0-2512-4337 Fax. (+66) 0-2512-4338 <br />
-              Email: webmaster@rama9art.org
-            </p>
             <div className="pb-10 xl:mt-[10px] text-base flex xl:hidden w-full xl:w-[35%] justify-center items-center">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
                 <path fill="#ffffff" d="M15,3C8.373,3,3,8.373,3,15c0,6.016,4.432,10.984,10.206,11.852V18.18h-2.969v-3.154h2.969v-2.099c0-3.475,1.693-5,4.581-5 c1.383,0,2.115,0.103,2.461,0.149v2.753h-1.97c-1.226,0-1.654,1.163-1.654,2.473v1.724h3.593L19.73,18.18h-3.106v8.697 C22.481,26.083,27,21.075,27,15C27,8.373,21.627,3,15,3z"></path>
