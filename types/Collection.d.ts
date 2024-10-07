@@ -92,7 +92,7 @@ interface CollectionExhibition {
 
 interface CollectionSearch{
   q: string;
-  artCollectionType?: string;
+  platformGame?: string;
   years: number[];
   artist_first_Alphabet:string;
   sort: string;

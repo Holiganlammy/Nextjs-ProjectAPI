@@ -27,7 +27,7 @@ export default function UniversalSearch() {
       if (q) urlSearchParams.set("q", q);
       if (limit) urlSearchParams.set("limit", limit)
 
-      const apiCollection = `${apiEndpoint}/api/art-collections/?${urlSearchParams.toString()}`;
+      const apiCollection = `${apiEndpoint}/api/games/?${urlSearchParams.toString()}`;
       fetch(apiCollection)
         .then((response) => response.json())
         .then((responseJson: { items: Games[], count: number }) => {

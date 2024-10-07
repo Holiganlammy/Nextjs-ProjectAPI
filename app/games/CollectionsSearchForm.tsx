@@ -23,26 +23,13 @@ export function CollectionsSearchForm() {
 
   const searchParams = useSearchParams();
   const year = searchParams.get("year");
-  const artCollectionType = searchParams.get("art_collection_type") ?? "";
+  const platformGame = searchParams.get("platform") ?? "";
   const endYear = searchParams.get("end_year");
-  const q = searchParams.get("q") ?? "";
+  const q = searchParams.get("title") ?? "";
   const artist_first_Alphabet = searchParams.get("artist_first_alphabet_en") ?? "";
   // const National = searchParams.get("is_national_artist") === "true";
   const [isMobileFilterVisible, setIsMobileFilterVisible] = useState(false);
   const router = useRouter();
-  // function onFormSubmit(event: FormEvent<HTMLFormElement>) {
-  //   event.preventDefault();
-  //   const params = new URLSearchParams();
-  //   if (q) {
-  //     params.set("q", q);
-  //   }
-  //   if (artistFilter) {
-  //     params.set("artist", artistFilter);
-  //   }
-  //   router.push(`/collections?${params.toString()}`);
-  // }
-
-  // Extract year values
   let years: number[] = [];
   if (!!year && !!endYear && !isNaN(+year) && !isNaN(+endYear)) {
     years = [+year, +endYear];
@@ -52,22 +39,22 @@ export function CollectionsSearchForm() {
   }
 
   const form = useForm<CollectionSearch>({
-    defaultValues: { q, artCollectionType, years, artist_first_Alphabet, National: false, sort: "default" }
+    defaultValues: { q, platformGame, years, artist_first_Alphabet, National: false, sort: "default" }
   });
 
-  const [watchYears, watchSort, watchArtCollectionType, watchArtist_first_Alphabet, watchNational] = form.watch(["years", "sort", "artCollectionType", "artist_first_Alphabet", "National"]);
+  const [watchYears, watchSort, watchPlatformGame, watchArtist_first_Alphabet, watchNational] = form.watch(["years", "sort", "platformGame", "artist_first_Alphabet", "National"]);
   // Form functions
   function onSubmitValid(values: CollectionSearch) {
     // Get all inputs
     // console.log(values)
-    const { q: _q, years: _years, artCollectionType: _artCollectionType, sort: _sort, artist_first_Alphabet: _artist_first_Alphabet, National: _National } = values;
+    const { q: _q, years: _years, platformGame: _platformGame, sort: _sort, artist_first_Alphabet: _artist_first_Alphabet, National: _National } = values;
     const _year = _years.length >= 1 ? _years[0] : null;
     const _endYear = _years.length >= 2 ? _years[1] : null;
 
     // Build URL query params
     const urlSearchParams = new URLSearchParams();
-    if (_q && _q !== "") urlSearchParams.set("q", _q);
-    if (_artCollectionType && _artCollectionType !== "") urlSearchParams.set("art_collection_type", _artCollectionType);
+    if (_q && _q !== "") urlSearchParams.set("title", _q);
+    if (_platformGame && _platformGame !== "") urlSearchParams.set("platform", _platformGame);
     if (_artist_first_Alphabet && _artist_first_Alphabet !== "") urlSearchParams.set("artist_first_alphabet_en", _artist_first_Alphabet)
     if (_National) urlSearchParams.set("is_national_artist", _National.toString())
     if (_year) urlSearchParams.set("year", `${_year}`);
@@ -79,7 +66,7 @@ export function CollectionsSearchForm() {
   }
   useEffect(() => {
     onSubmitValid(form.getValues())
-  }, [watchYears, watchSort, watchArtCollectionType, watchArtist_first_Alphabet, watchNational])
+  }, [watchYears, watchSort, watchPlatformGame, watchArtist_first_Alphabet, watchNational])
 
   return (
     <Form {...form}>
@@ -88,7 +75,7 @@ export function CollectionsSearchForm() {
           <div className="mx-auto">
             <FormField
               control={form.control}
-              name="artCollectionType"
+              name="platformGame"
               render={({ field }) => <GameListsSearchFormItemCollectionType field={field} />}
             />
             <div className="relative max-w-[1000px] mx-auto flex items-center gap-2">

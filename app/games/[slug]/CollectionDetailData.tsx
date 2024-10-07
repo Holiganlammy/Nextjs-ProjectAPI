@@ -21,7 +21,7 @@ function CollectionDetailData(props: { params: { slug: string, id: number } }) {
   useEffect(() => {
     const apiEndpoint = process.env.NEXT_PUBLIC_API_ENDPOINT;
     if (apiEndpoint) {
-      const apiCollectionDetail = `${apiEndpoint}/api/art-collections/${slug}`;
+      const apiCollectionDetail = `${apiEndpoint}/api/games/${slug}`;
       fetch(apiCollectionDetail)
         .then(response => response.json())
         .then((responseJson) => {

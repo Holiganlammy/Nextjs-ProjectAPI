@@ -5,20 +5,20 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { ControllerRenderProps } from "react-hook-form";
 const CollectionTypes = [
   {
-    title: "GameList",
-    value: ""
+    title: "All Platform",
+    value: "all"
   },
-  // {
-  //   title: "Institutional Collections",
-  //   value: "institutional"
-  // },
-  // {
-  //   title: "Private Collections",
-  //   value: "private"
-  // },
+  {
+    title: "Windows (PC)",
+    value: "pc"
+  },
+  {
+    title: "Browser (Web)",
+    value: "browser"
+  },
 ];
 interface ComponentProps {
-  field: ControllerRenderProps<CollectionSearch, "artCollectionType">;
+  field: ControllerRenderProps<CollectionSearch, "platformGame">;
 }
 export function GameListsSearchFormItemCollectionType({ field }: ComponentProps) {
   return (
