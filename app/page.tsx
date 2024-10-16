@@ -1,5 +1,5 @@
-import { Suspense } from "react";
-import HomeSearchForm from "./HomeSearchForm";
+// import { Suspense } from "react";
+// import HomeSearchForm from "./HomeSearchForm";
 
 export default function HomePage() {
   return (

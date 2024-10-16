@@ -1,7 +1,7 @@
 // import Sitefooter from "@/data/site-footer-menu.json"
 import Link from "next/link"
 import { Instagram, Facebook, Github } from 'lucide-react';
-import Image from "next/image";
+// import Image from "next/image";
 export default function SiteFooter() {
   return (
     <div className="bg-[#1c1e22] text-[#AAAAAA] border shadow-md border-black w-full h-full p-5 2xl:p-5">
