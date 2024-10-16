@@ -80,7 +80,7 @@ export default function SiteHeader() {
       <div className="pl-4 pr-4">
         <div className="text-sm flex justify-between h-14">
           <div className="flex h-full">
-            <div className="xl:hidden flex items-center pr-5">
+            <div className="xl:hidden flex items-center md:pr-5">
               <Menu onClick={openMenu} aria-label="Open Menu" />
               <div
                 className={`fixed z-50 top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isOpenMenu ? 'translate-x-0' : '-translate-x-full'}`}
@@ -106,7 +106,7 @@ export default function SiteHeader() {
             <div className="flex h-full pr-3">
               <h1 className="font-semibold self-center">
                 <Link href="/">
-                  <Image src="/images/Games/world_wire_Game_Center.png" alt="LogoRAMAIX" width="130" height="75" className="" />
+                  <Image src="/images/Games/world_wire_Game_Center.png" alt="LogoWorldWireGame" width="130" height="75" className="" />
                 </Link>
               </h1>
             </div>
@@ -144,7 +144,7 @@ export default function SiteHeader() {
                           <div className="relative flex items-center">
                             <Input
                               type="text"
-                              className={`h-[50px] w-0 p-[10px] text-[18px] tracking-[2px] transition-[all_0.5s_ease-in-out] text-black absolute right-0 opacity-0 duration-500 ${isSearchOpen ? "w-[270px] md:w-[300px] opacity-100 border border-black transition-[all_500ms_cubic-bezier(0,0.110,0.35,2)] right-[-10px] pointer-events-auto visibility-visible" : "pointer-events-none visibility-hidden"} bg-gray-100`}
+                              className={`h-[50px] w-0 p-[10px] text-[18px] tracking-[2px] transition-[all_0.5s_ease-in-out] text-black absolute right-0 opacity-0 duration-500 ${isSearchOpen ? "w-[250px] md:w-[300px] opacity-100 border border-black transition-[all_500ms_cubic-bezier(0,0.110,0.35,2)] right-[-10px] pointer-events-auto visibility-visible" : "pointer-events-none visibility-hidden"} bg-gray-100`}
                               placeholder="Search..."
                               {...field}
                               required

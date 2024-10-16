@@ -61,7 +61,7 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
       <div className=" max-w-[1200px] mx-auto bg-cover bg-top bg-repeat h-[38rem] absolute left-0 right-0 top-[0rem] opacity-[.4]" style={{ backgroundImage: `url('https://www.freetogame.com/g/${GameDetails.id}/background.jpg')` }}>
         <div className={`${styles['background-linear']}`}></div>
       </div>
-      <div className="p-5 mx-auto relative">
+      <div className="md:p-5 mx-auto relative">
         <Breadcrumb>
           <BreadcrumbList className="mb-5">
             <BreadcrumbItem>
@@ -81,8 +81,37 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <div className="w-full space-x-5">
-          <div className="md:flex gap-5">
+        <div className="w-full md:space-x-5">
+          <div className="md:hidden">
+            <Image
+              className="mb-4"
+              src={GameDetails.thumbnail}
+              alt={GameDetails.title}
+              width={2000}
+              height={1000}
+            />
+            <div className="flex space-x-2">
+              <Button className="w-[80%] h-[48.5px] space-x-2" asChild>
+                <Link href={GameDetails.game_url}>
+                  <span className="text-xl">PLAY NOW</span>
+                  <LogOut />
+                </Link>
+              </Button>
+              <Button className="w-[19%] h-[48.5px]">FREE</Button>
+            </div>
+            <div className="mb-10">
+              <p className="text-2xl font-bold mb-5">{GameDetails.title}</p>
+              <div className="flex space-x-2 font-bold text-base mb-3">
+                <Gamepad2 />
+                <p> Game Status : {GameDetails.status}</p>
+              </div>
+              <div className="flex space-x-3 font-bold text-base">
+                <ChartBar />
+                <p>Short Description : {GameDetails.short_description}</p>
+              </div>
+            </div>
+          </div>
+          <div className="md:flex md:gap-5">
             {GameDetails.screenshots.length > 0 ? (
               <div className="w-full md:w-[70%] flex flex-col">
                 <div className="hover:z-10 h-0 pb-[60%] w-full relative rounded-lg overflow-hidden cursor-pointer">
@@ -140,7 +169,7 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
                 <p className="text-gray-600">Image not available</p>
               </div>
             )}
-            <div className="md:w-[30%]">
+            <div className="hidden md:w-[30%] md:block">
               <Image
                 className="mb-4"
                 src={GameDetails.thumbnail}
@@ -176,9 +205,9 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
             <p className="text-2xl font-bold">Additional Information</p>
             <div className="flex space-x-2 border-b border-[#5e54541a] pb-2">
               <CircleAlert className="w-5" />
-              <span>Please note this free-to-play game may or may not offer optional in-game purchases.
+              <span>
+                Please note this free-to-play game may or may not offer optional in-game purchases.
               </span>
-              F
             </div>
             <div className="grid grid-cols-3 my-5 gap-3">
               <div>

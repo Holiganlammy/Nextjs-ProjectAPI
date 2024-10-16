@@ -15,7 +15,7 @@ interface ComponentProps {
 }
 
 export function GameListsSearchFormItemYears({ field, year, endYear }: ComponentProps) {
-  const [isOpen , setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   let yearsLabel = "Filter year of work"
   if (!!year && !!endYear && !isNaN(+year) && !isNaN(+endYear)) {
     yearsLabel = `Years of work : ${year} - ${endYear}`;
@@ -31,7 +31,7 @@ export function GameListsSearchFormItemYears({ field, year, endYear }: Component
 
   return (
     <Popover open={isOpen} onOpenChange={setIsOpen}>
-      <PopoverTrigger className={`w-full rounded-full text-xs lg:font-medium lg:text-base mx-auto ${year || isOpen ? "border-[#2BAC7E]":""}`} asChild>
+      <PopoverTrigger className={`w-full rounded-full text-xs lg:font-medium lg:text-base mx-auto ${year || isOpen ? "border-[#2BAC7E]" : ""}`} asChild>
         <Button variant="outline" className="justify-between relative px-3">
           <div className="flex items-center justify-center">
             <CalendarIcon className="mr-2 h-4 w-4" />

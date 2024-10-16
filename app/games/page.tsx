@@ -33,7 +33,7 @@ export default async function GamePage({ searchParams }: PageProps) {
         <div className={`bg-cover bg-center bg-repeat h-[40rem] absolute left-0 right-0 top-[0rem] w-full opacity-[0.5] `} style={{ backgroundImage: `url("/images/Games/valorantbg.jpg")` }}>
           <div className={`${styles['background-linear']}`}></div>
         </div>
-        <p className="relative text-center font-bold text-6xl text-white">World wire Online Center</p>
+        <p className="relative text-center font-bold text-5xl md:text-6xl text-white">World wire Online Center</p>
       </div>
 
       <Suspense>

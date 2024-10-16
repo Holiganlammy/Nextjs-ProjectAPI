@@ -1,7 +1,7 @@
 "use client"
 import { FormControl, FormItem } from "@/components/ui/form";
 import { ControllerRenderProps } from "react-hook-form";
-import { SlidersHorizontal  } from 'lucide-react';
+import { SlidersHorizontal } from 'lucide-react';
 import {
   Select,
   SelectContent,
@@ -38,7 +38,7 @@ export function GameListsSearchFormItemGenreTag({ field }: ComponentProps) {
             <SelectTrigger
               className={`relative w-full xl:w-[220px] rounded-full text-xs lg:text-sm lg:font-medium h-10 focus:ring-0 ${open || field.value !== "default" && field.value !== "" ? "visibility-hidden border-[1px] bg-[#1c1e22] border-white" : ""}`}
             >
-              <SlidersHorizontal  className="w-4 h-4" />
+              <SlidersHorizontal className="w-4 h-4" />
               <SelectValue placeholder="Genre / Tag by Default" />
             </SelectTrigger>
             {isSelected && (
