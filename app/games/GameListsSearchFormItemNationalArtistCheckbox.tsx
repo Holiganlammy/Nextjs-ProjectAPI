@@ -5,7 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { ListCheck } from 'lucide-react';
 
 interface ComponentProps {
-  field: ControllerRenderProps<CollectionSearch, "National">;
+  field: ControllerRenderProps<GameListSearch, "National">;
 }
 
 export function GameListsSearchFormItemNationalArtistCheckbox({ field }: ComponentProps) {

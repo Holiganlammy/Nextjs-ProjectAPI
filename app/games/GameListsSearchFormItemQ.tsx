@@ -5,7 +5,7 @@ import { ControllerRenderProps } from "react-hook-form";
 import { Search } from "lucide-react";
 
 interface ComponentProps {
-  field: ControllerRenderProps<CollectionSearch, "q">;
+  field: ControllerRenderProps<GameListSearch, "q">;
 }
 
 export function GameListsSearchFormItemQ({ field }: ComponentProps) {

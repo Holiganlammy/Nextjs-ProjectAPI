@@ -14,17 +14,6 @@ interface Games {
   freetogame_profile_url?:string
   // artist?:CollectionArtist;
 }
-// "id": 582,
-// "title": "Tarisland",
-// "thumbnail": "https://www.freetogame.com/g/582/thumbnail.jpg",
-// "short_description": "A cross-platform MMORPG developed by Level Infinite and Published by Tencent.",
-// "game_url": "https://www.freetogame.com/open/tarisland",
-// "genre": "MMORPG",
-// "platform": "PC (Windows)",
-// "publisher": "Tencent",
-// "developer": "Level Infinite",
-// "release_date": "2024-06-22",
-// "freetogame_profile_url": "https://www.freetogame.com/tarisland"
 interface CollectionArtist{
   id: number;
   image:string;
@@ -35,32 +24,37 @@ interface CollectionArtist{
   name_th?:string;
 }
 
-interface CollectionDetail {
+interface GameListDetail {
   id: number;
-  image?: string;
-  image_width?: number;
-  image_height?: number;
-  work_type?: string;
-  received_at?: string;
-  current_status?: string;
-  acquirement?: string;
-  title_en: string;
-  title_th: string;
-  year: number;
-  year_2: number;
-  technique_display: string;
-  other_technique_th: string;
-  other_technique_en: string;
-  size: string;
-  size_measurement: string;
-  size_with_frame: string;
-  size_with_frame_measurement: string;
-  slug?:string;
-  artist?: CollectionArtist;
-  exhibitions: CollectionExhibition[];
+  title:string;
+  thumbnail: string;
+  thumbnail_width?: number;
+  thumbnail_height?: number;
+  status?: string;
+  short_description?: string;
+  description?: string;
+  game_url: string;
+  genre: string;
+  platform: string;
+  publisher: string;
+  developer: string;
+  release_date: string;
+  freetogame_profile_url: string;
+  minimum_system_requirements: minimum_system_requirements;
+  screenshots: Screenshot[];
 }
 
-
+interface minimum_system_requirements{
+     os?: string,
+     processor?: string,
+     memory?: string,
+     graphics?: string,
+     storage?: string
+}
+interface Screenshot{
+  id:number,
+  image:string
+}
 interface CollectionAnother{
   id:number;
   image:string;
@@ -90,11 +84,12 @@ interface CollectionExhibition {
   art_collection?: string;
 }
 
-interface CollectionSearch{
+interface GameListSearch{
   q: string;
   platformGame?: string;
   years: number[];
   artist_first_Alphabet:string;
-  sort: string;
+  genre:string;
+  sort:string;
   National?:boolean;
 }

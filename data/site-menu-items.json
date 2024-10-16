@@ -13,10 +13,5 @@
     "title": "All Game Center",
     "href": "/games",
     "activecolor": "#2BAC7E"
-  },
-  {
-    "title": "Curator",
-    "href": "/curator",
-    "activecolor": "#DD2681"
   }
 ]

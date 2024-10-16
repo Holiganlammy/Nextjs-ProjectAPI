@@ -82,7 +82,7 @@ export default function UniversalSearch() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-8 gap-x-2 mx-auto mb-5">
             {collections.map((filter) => (
-              <GameListItem key={filter.id} Collection={filter} />
+              <GameListItem key={filter.id} Gamelist={filter} />
             ))}
           </div>
           {countCollection >= 16 && (

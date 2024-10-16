@@ -6,7 +6,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon, CircleX, ChevronsUpDown } from "lucide-react";
 import { MouseEvent, useState } from "react";
 import { ControllerRenderProps } from "react-hook-form";
-type YearsField = ControllerRenderProps<CollectionSearch, "years">;
+type YearsField = ControllerRenderProps<GameListSearch, "years">;
 
 interface ComponentProps {
   field: YearsField;

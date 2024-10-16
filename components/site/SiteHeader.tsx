@@ -76,7 +76,7 @@ export default function SiteHeader() {
     form.setValue("q", q);
   }, [q]);
   return (
-    <header className="bg-[#FBFBFB] text-[#051525] border-b p-2 md:p-5 shadow-md">
+    <header className="bg-[#272b30] border-b border-black p-2 md:p-5 shadow-md">
       <div className="pl-4 pr-4">
         <div className="text-sm flex justify-between h-14">
           <div className="flex h-full">
@@ -118,7 +118,7 @@ export default function SiteHeader() {
                     <Link
                       href={menuItem.href}
                       className={`relative self-center text-lg`}
-                      style={{ color: isActive ? menuItem.activecolor : '#051525' }} 
+                      style={{ color: isActive ? menuItem.activecolor : '#AAAAAA' }} 
                     >
                       {menuItem.title}
                       <span
@@ -153,12 +153,12 @@ export default function SiteHeader() {
                               <button type="submit">
                                 <Search
                                   onClick={() => setSearchOpen(true)}
-                                  className={`absolute right-0 top-1/2 transform -translate-y-1/2 ${isSearchOpen ? "text-black" : "text-black"} cursor-pointer`}
+                                  className={`absolute right-0 top-1/2 transform -translate-y-1/2 ${isSearchOpen ? "text-black" : "text-[#AAAAAA]"} cursor-pointer`}
                                 />
                               </button>
                               : <Search
                                 onClick={() => setSearchOpen(true)}
-                                className={`absolute right-0 top-1/2 transform -translate-y-1/2 ${isSearchOpen ? "text-black" : "text-black"} cursor-pointer`}
+                                className={`absolute right-0 top-1/2 transform -translate-y-1/2 ${isSearchOpen ? "text-black" : "text-[#AAAAAA]"} cursor-pointer`}
                               />}
                             {field && (
                               <X

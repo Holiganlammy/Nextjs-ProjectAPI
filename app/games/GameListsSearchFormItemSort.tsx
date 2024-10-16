@@ -7,12 +7,14 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
+  SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select"
 import { MouseEvent, useState } from "react";
 import { CircleX } from "lucide-react";
-type sortfield = ControllerRenderProps<CollectionSearch, "sort">
+
+type sortfield = ControllerRenderProps<GameListSearch, "sort">
 interface ComponentProps {
   field: sortfield;
 }
@@ -34,10 +36,10 @@ export function GameListsSearchFormItemSort({ field }: ComponentProps) {
         <Select defaultValue={field.value} onValueChange={handleValueChange} value={field.value} onOpenChange={setOpen} open={open}>
           <div className="relative flex items-center w-full xl:w-[220px]">
             <SelectTrigger
-              className={`relative w-full xl:w-[220px] rounded-full text-xs lg:text-base lg:font-medium h-10 focus:ring-0 ${open || field.value !== "default" && field.value !== "" ? "visibility-hidden border-[1px] bg-white border-[#2BAC7E]" : ""}`}
+              className={`relative w-full xl:w-[220px] rounded-full text-xs lg:text-sm lg:font-medium h-10 focus:ring-0 ${open || field.value !== "default" && field.value !== "" ? "visibility-hidden border-[1px] bg-[#1c1e22] border-white" : ""}`}
             >
               <ArrowUpDown className="w-4 h-4" />
-              <SelectValue placeholder="Sort by Artist name" />
+              <SelectValue placeholder="Sort By Default" />
             </SelectTrigger>
             {isSelected && (
               <CircleX
@@ -46,11 +48,14 @@ export function GameListsSearchFormItemSort({ field }: ComponentProps) {
               />
             )}
           </div>
-          <SelectContent>
-            <SelectGroup className="font-bold">
-              <SelectItem value="default">Sort Artist by Default</SelectItem>
-              <SelectItem value="artist__name_en">Artist Name A-Z</SelectItem>
-              <SelectItem value="-artist__name_en">Artist Name Z-A</SelectItem>
+          <SelectContent className="bg-[#1c1e22] text-[#AAAAAA]">
+            <SelectGroup>
+              <SelectLabel className="font-bold text-base">Sort By :</SelectLabel>
+              <SelectItem value="default">Sort By Default</SelectItem>
+              <SelectItem value="release-date">Release Date</SelectItem>
+              <SelectItem value="popularity">Popular Games</SelectItem>
+              <SelectItem value="alphabetical">Alphabetical</SelectItem>
+              <SelectItem value="relevance">Relevance</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

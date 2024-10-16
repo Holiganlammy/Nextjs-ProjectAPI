@@ -14,7 +14,7 @@ import { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 const AZAsciis = Array.from({ length: 26 }, (_, index) => index + 65);
 
-type AlphabetField = ControllerRenderProps<CollectionSearch, "artist_first_Alphabet">
+type AlphabetField = ControllerRenderProps<GameListSearch, "artist_first_Alphabet">
 interface ComponentProps {
   field: AlphabetField;
 }

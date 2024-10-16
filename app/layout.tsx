@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`${font.className} bg-[#272b30]`}>
         <Suspense>
           <SiteHeader />
         </Suspense>
