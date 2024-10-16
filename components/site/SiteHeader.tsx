@@ -83,7 +83,7 @@ export default function SiteHeader() {
             <div className="xl:hidden flex items-center md:pr-5">
               <Menu onClick={openMenu} aria-label="Open Menu" />
               <div
-                className={`fixed z-50 top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isOpenMenu ? 'translate-x-0' : '-translate-x-full'}`}
+                className={`fixed z-50 top-0 left-0 h-full w-64 bg-[#1c1e22] text-white shadow-lg transform transition-transform duration-300 ease-in-out ${isOpenMenu ? 'translate-x-0' : '-translate-x-full'}`}
               >
                 <div className="flex justify-end p-4">
                   <X onClick={closeMenu} aria-label="Close Menu" />

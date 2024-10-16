@@ -1,10 +1,13 @@
 // import { Suspense } from "react";
 import Link from "next/link";
 // import HomeSearchForm from "./HomeSearchForm";
-
+import styles from '@/app/games/GameLists.module.css'
 export default function HomePage() {
   return (
-    <section className="min-h-[calc(100dvh-165px)] px-3 sm:px-4 lg:px-6 bg-center" style={{ backgroundImage: `url("/images/Games/valorant-home.jpg")` }}>
+    <section className="min-h-[calc(100dvh-165px)] px-3 sm:px-4 lg:px-6 relative">
+      <div className=" mx-auto bg-cover bg-top bg-repeat w-full h-full absolute left-0 right-0 top-[0rem]" style={{ backgroundImage: `url("/images/Games/valorant-home.jpg")` }}>
+        <div className={`${styles['background-linear']}`}></div>
+      </div>
       <div>
         <div className="relative text-white flex items-center justify-center md:justify-end pt-20 lg:pt-10">
           <div className="text-center md:text-right">
