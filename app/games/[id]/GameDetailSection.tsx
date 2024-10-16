@@ -23,7 +23,9 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [ClickZoomSmallRes, setClickZoomSmallRes] = useState(true);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [mainImage, setMainImage] = useState(GameDetails.screenshots[0].image);
+  const [mainImage, setMainImage] = useState(
+    GameDetails.screenshots.length > 0 ? GameDetails.screenshots[0].image : null
+  );
   useEffect(() => {
     const resizesmall = () => {
       if (window.innerWidth < 640) {
@@ -81,7 +83,7 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <div className="w-full md:space-x-5">
+        <div className="w-full">
           <div className="md:hidden">
             <Image
               className="mb-4"
@@ -112,7 +114,7 @@ export function GameDetailSection({ GameDetails }: GameDetailsProps) {
             </div>
           </div>
           <div className="md:flex md:gap-5">
-            {GameDetails.screenshots.length > 0 ? (
+            {mainImage ? (
               <div className="w-full md:w-[70%] flex flex-col">
                 <div className="hover:z-10 h-0 pb-[60%] w-full relative rounded-lg overflow-hidden cursor-pointer">
                   <Image
